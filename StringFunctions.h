@@ -15,8 +15,18 @@
 
 int setWord(char word[]);
 int setText(char text[]);
-
 int replaceStr(char* word, char oldCh, char newCh);
+
+int getGimtric(char ch);
+void printAllGimatrig(char word[], char text[]);
+
+void makeAtbash(char word[], char atbash[]);
+void makeReverse(char word[], char rev[]);
+int strCopyNoSpc(char str[TXT], char text[TXT], int start, int end);
+void printAllAtbash(char word[], char text[]);
+
+int isAnagram(char word[], char text[], int start, int end);
+void printAllAnagrams(char word[], char text[]);
 
 
 #endif // STRING_FUNCTIONS_H
