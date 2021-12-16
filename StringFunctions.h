@@ -22,7 +22,7 @@ void printAllGimatrig(char word[], char text[]);
 
 void makeAtbash(char word[], char atbash[]);
 void makeReverse(char word[], char rev[]);
-int strCopyNoSpc(char str[TXT], char text[TXT], int start, int end);
+void strCopyNoSpc(char str[TXT], char text[TXT], int start, int end);
 void printAllAtbash(char word[], char text[]);
 
 int isAnagram(char word[], char text[], int start, int end);

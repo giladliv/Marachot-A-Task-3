@@ -96,7 +96,7 @@ void printAllGimatrig(char word[], char text[])
 
 void makeAtbash(char word[], char atbash[])
 {
-    memset(atbash, '\0', sizeof(atbash));
+    memset(atbash, '\0', TXT);
     int lenW = strlen(word);
     
     for (int i = 0; i < lenW; i++)
@@ -118,7 +118,7 @@ void makeAtbash(char word[], char atbash[])
 
 void makeReverse(char word[], char rev[])
 {
-    memset(rev, '\0', sizeof(rev));
+    memset(rev, '\0', TXT);
 	int lenW = strlen(word);
 
     for (int i = 0 ; i < lenW; i++)
@@ -127,9 +127,9 @@ void makeReverse(char word[], char rev[])
     }	
 }
 
-int strCopyNoSpc(char str[TXT], char text[TXT], int start, int end)
+void strCopyNoSpc(char str[], char text[], int start, int end)
 {
-	memset(str, '\0', sizeof(str));
+	memset(str, '\0', TXT);
 	int ind = 0;
 	for (int i = start; i <= end; i++)
 	{
