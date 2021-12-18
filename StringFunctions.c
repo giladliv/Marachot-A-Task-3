@@ -182,20 +182,25 @@ void printAllAtbash(char word[], char text[])
 
 int isAnagram(char word[], char text[], int start, int end)
 {
-	int sum = end - start + 1;
 	int lenW = strlen(word);
+	int sum = lenW;
 	char* str = (char*)calloc((lenW + 1), sizeof(char));
 	strcpy(str, word);
 
 	for (int i = start; i <= end; i++)
 	{
 		char ch = text[i];
-		if (replaceStr(str, ch, ' ') || ch == ' ' || ch == '\t' || ch == '\n')
+		if (ch == ' ' || ch == '\t' || ch == '\n')
+		{
+			continue;
+		}
+		else if (replaceStr(str, ch, ' '))
 		{
 			sum -= 1;
 		}
 		else
 		{
+			sum = -1;
 			break;
 		}
 	}
