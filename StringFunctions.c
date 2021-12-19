@@ -69,7 +69,7 @@ void printSubString(char text[], int start, int end, int* isFirst)
 		// if it is the first time to being printed, dont print '~'
 		printf("%s", ((*isFirst) ? "" : "~"));
 		// from index i print the substring to j (give the substring len)
-		printf("%.*s", currlen, &text[i]);
+		printf("%.*s", currlen, &text[start]);
 		(*isFirst) = FALSE; // already printed, then not the first time
 	}
 	
