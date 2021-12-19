@@ -17,6 +17,8 @@ int setWord(char word[]);
 int setText(char text[]);
 int replaceStr(char* word, char oldCh, char newCh);
 
+void printSubString(char text[], int start, int end, int* isFirst);
+
 int getGimtric(char ch);
 void printAllGimatrig(char word[], char text[]);
 
